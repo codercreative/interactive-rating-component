@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+}
+
+.container {
+  background-color: hsl(216, 12%, 8%);
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+}
+
+p {
+  color: hsl(217, 12%, 63%);
+}
