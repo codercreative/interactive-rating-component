@@ -5,18 +5,76 @@
 }
 
 body {
-  background-color: hsl(216, 12%, 8%);
+  height: 100vh;
+  width: 100vw;
+  background-color: #121417;
   font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .container {
-  background-color: hsl(216, 12%, 8%);
+  background-color: #252d37;
+  border-radius: 16px;
+  width: 375px;
+}
+
+.rating-card {
+  margin: 30px;
+}
+
+.icon-star {
+  background-color: #303a46;
+  border-radius: 50%;
+  padding: 15px;
 }
 
 h1 {
-  color: hsl(0, 0%, 100%);
+  margin-top: 20px;
+  color: #ffffff;
 }
 
 p {
-  color: hsl(217, 12%, 63%);
+  color: #959eac;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.rating-scale {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating {
+  background-color: #303a46;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: #7c8798;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background-color: #fb7413;
+  width: 100%;
+  border: none;
+  border-radius: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 14px 12px;
+  margin-top: 25px;
+}
+
+.thank-you-card {
+  display: none;
 }
