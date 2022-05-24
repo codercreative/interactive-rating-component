@@ -28,6 +28,8 @@
 
     <link rel="stylesheet" href="css/style.css" />
 
+    <script src="js/script.js" defer></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -38,51 +40,45 @@
   <body>
     <main class="container">
       <!-- Rating state start -->
-      <div class="rating-card">
-        <div class="image-container">
-          <img
-            src="images/icon-star.svg"
-            alt="orange star icon"
-            class="icon-star"
-          />
+      <div id="rating-screen">
+        <div>
+          <img src="images/icon-star.svg" alt="star icon" class="star" />
         </div>
+
         <h1>How did we do?</h1>
+
         <p>
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
+
         <div class="rating-scale">
-          <button class="rating">1</button>
-          <button class="rating">2</button>
-          <button class="rating">3</button>
-          <button class="rating">4</button>
-          <button class="rating">5</button>
+          <button class="rate-btn" id="number-1">1</button>
+          <button class="rate-btn" id="number-2">2</button>
+          <button class="rate-btn" id="number-3">3</button>
+          <button class="rate-btn" id="number-4">4</button>
+          <button class="rate-btn" id="number-4">5</button>
         </div>
         <div>
-          <button class="submit-btn">Submit</button>
+          <button id="submit-btn">Submit</button>
         </div>
       </div>
 
       <!-- Rating end -->
 
       <!-- Thank you card-->
-      <div class="thank-you-card hide">
-        <div class="image-container">
-          <img
-            src="images/illustration-thank-you.svg"
-            alt="thank you illustration"
-          />
-        </div>
-        <div class="rating-value">
-          <p>You selected <span id="rating"></span> out of 5</p>
-        </div>
-        <div class="thank-you-message">
-          <h2>Thank you!</h2>
-          <p>
-            We appreciate you taking the time to give a rating. If you ever need
-            more support, don’t hesitate to get in touch!
-          </p>
-        </div>
+      <div id="thank-you-screen" class="hide">
+        <img
+          src="images/illustration-thank-you.svg"
+          alt="thank you illustration"
+        />
+        <p id="thanks-subtext"></p>
+
+        <h1>Thank you!</h1>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
       </div>
       <!-- Add rating here -->
 
