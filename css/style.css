@@ -22,7 +22,8 @@ body {
   width: 375px;
 }
 
-#rating-screen {
+#rating-state,
+#thank-you-state {
   margin: 30px;
 }
 
@@ -43,7 +44,7 @@ p {
   line-height: 1.6;
 }
 
-.rating-scale {
+#rating-scale-container {
   width: 100%;
   margin-top: 20px;
   display: flex;
@@ -63,14 +64,14 @@ p {
 .rate-btn:hover,
 .rate-btn:active {
   color: #ffffff;
-  background-color: #959eac;
+  background-color: #fb7413;
   font-weight: 700;
   transition: 0.5s;
 }
 
 .rate-btn:focus {
   color: #ffffff;
-  background-color: #fb7413;
+  background-color: #959eac;
 }
 
 #submit-btn {
@@ -88,7 +89,7 @@ p {
   margin-top: 25px;
 }
 
-.submit-btn:hover {
+#submit-btn:hover {
   background-color: #ffffff;
   color: #fb7413;
 }
@@ -96,4 +97,18 @@ p {
 .hide {
   visibility: hidden;
   display: none;
+}
+
+#thank-you-state {
+  text-align: center;
+}
+
+#thank-you-state .rating-text {
+  margin-top: 30px;
+  color: #fb7413;
+  background-color: #303a46;
+  font-size: 0.875em;
+  padding: 0.5rem 0.3rem;
+  border-radius: 25px;
+  margin: 1.8rem 4rem;
 }

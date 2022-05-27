@@ -40,7 +40,7 @@
   <body>
     <main class="container">
       <!-- Rating state start -->
-      <div id="rating-screen">
+      <div id="rating-state">
         <div>
           <img src="images/icon-star.svg" alt="star icon" class="star" />
         </div>
@@ -52,12 +52,12 @@
           is appreciated to help us improve our offering!
         </p>
 
-        <div class="rating-scale">
-          <button class="rate-btn" id="number-1">1</button>
-          <button class="rate-btn" id="number-2">2</button>
-          <button class="rate-btn" id="number-3">3</button>
-          <button class="rate-btn" id="number-4">4</button>
-          <button class="rate-btn" id="number-4">5</button>
+        <div id="rating-scale-container">
+          <button class="rate-btn">1</button>
+          <button class="rate-btn">2</button>
+          <button class="rate-btn">3</button>
+          <button class="rate-btn">4</button>
+          <button class="rate-btn">5</button>
         </div>
         <div>
           <button id="submit-btn">Submit</button>
@@ -67,12 +67,14 @@
       <!-- Rating end -->
 
       <!-- Thank you card-->
-      <div id="thank-you-screen" class="hide">
+      <div id="thank-you-state" class="hide">
         <img
           src="images/illustration-thank-you.svg"
           alt="thank you illustration"
         />
-        <p id="thanks-subtext"></p>
+        <p class="rating-text">
+          You selected <span id="selected-rating">0</span> of 5
+        </p>
 
         <h1>Thank you!</h1>
         <p>
