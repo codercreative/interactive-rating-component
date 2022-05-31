@@ -5,7 +5,6 @@ const numbers = document.getElementById("rating-scale-container");
 const submitButton = document.getElementById("submit-btn");
 const thankYouScreen = document.getElementById("thank-you-state");
 const selectedRating = document.getElementById("selected-rating");
-let rating = 0;
 
 function submit() {
   ratingScreen.classList.add("hide");
