@@ -6,18 +6,15 @@ const submitButton = document.getElementById("submit-btn");
 const thankYouScreen = document.getElementById("thank-you-state");
 const selectedRating = document.getElementById("selected-rating");
 
-function submit() {
-  ratingScreen.classList.add("hide");
-  thankYouScreen.classList.remove("hide");
-}
-
 submitButton.addEventListener("click", function () {
   submit();
 });
 
 numbers.addEventListener("click", (e) => {
   if (e.target.matches("button")) {
-    let chosenBtn = e.target.innerHTML;
+    let chosenBtn = e.target.textContent;
     selectedRating.textContent = chosenBtn;
+    ratingScreen.classList.add("hide");
+    thankYouScreen.classList.remove("hide");
   }
 });
